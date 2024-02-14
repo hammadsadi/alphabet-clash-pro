@@ -18,18 +18,15 @@
     <main
       class="bg-[#000] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center"
     >
-      <section
-        id="home"
-        class="flex justify-center items-center min-h-screen hidden"
-      >
+      <section id="home" class="flex justify-center items-center min-h-screen">
         <div class="text-center space-y-3 text-white">
           <h3 class="text-7xl font-anton">ALPHABET CLASH</h3>
           <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
           <button class="btn btn-active bg-white text-black">Play Now</button>
         </div>
       </section>
-      <!-- Play -->
-      <section id="play">
+      <!-- PlayGround -->
+      <section id="play" class="hidden">
         <div class="space-y-8">
           <!-- Screen -->
           <div>
@@ -94,7 +91,19 @@
         </div>
       </section>
       <!-- Score -->
-      <section id="score"></section>
+      <section id="score" class="hidden">
+        <div
+          class="flex flex-col justify-center items-center h-screen text-white text-center"
+        >
+          <div class="bg-[#FFFFFF12] p-8 rounded-2xl space-y-4">
+            <h2 class="text-6xl">
+              <span class="font-extrabold">Score :</span> 14
+            </h2>
+            <button class="btn text-black bg-white">Play Now</button>
+            <p>Practice will make you Pro</p>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
