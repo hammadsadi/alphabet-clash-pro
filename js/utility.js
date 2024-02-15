@@ -11,7 +11,7 @@ function showElementById(elementId) {
 
 // Generate Random Alphabet
 function generateRandomAlphabet() {
-  let alphabetString = "abcdefghjklmnopqrstuvwxyz";
+  let alphabetString = "abcdefghijklmnopqrstuvwxyz";
   let alphabetArray = alphabetString.split("");
 
   // Random Alphabet
@@ -42,4 +42,28 @@ function elementGetById(elementId) {
 function setValueById(elementId, value) {
   let element = document.getElementById(elementId);
   element.innerText = value;
+}
+
+//  Get Element By Id
+function getElementByIdForSelect(elementId) {
+  let element = document.getElementById(elementId);
+  return element;
+}
+
+// Game Win
+function gameWin() {
+  let winGam = new Audio("/sound/win.mp3");
+  winGam.play();
+}
+
+// Game Win
+function gameFailed() {
+  let failedGam = new Audio("/sound/failed.mp3");
+  failedGam.play();
+}
+
+// Game End
+function gameEnd() {
+  let endGam = new Audio("/sound/end.mp3");
+  endGam.play();
 }
